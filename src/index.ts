@@ -1,2 +1,2 @@
 export type * from "./types.js";
-export * from "./index.js";
+export * from "./npmUsernameToPackages.js";
