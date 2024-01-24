@@ -4,10 +4,9 @@
 		".github",
 		"CHANGELOG.md",
 		"coverage",
-		"joshuakgoldberg",
 		"lib",
 		"node_modules",
 		"pnpm-lock.yaml"
 	],
-	"words": ["knip", "packagejson", "tsup"]
+	"words": ["joshuakgoldberg", "knip", "packagejson", "tsup"]
 }
