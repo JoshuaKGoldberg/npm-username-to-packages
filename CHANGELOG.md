@@ -1,3 +1,9 @@
+## [0.1.2](https://github.com/JoshuaKGoldberg/npm-username-to-packages/compare/0.1.1...0.1.2) (2024-01-24)
+
+### Bug Fixes
+
+- export npmUsernameToPackages ([f900177](https://github.com/JoshuaKGoldberg/npm-username-to-packages/commit/f900177b56616ad83b673c6d2e5f513e8e748a93))
+
 ## [0.1.1](https://github.com/JoshuaKGoldberg/npm-username-to-packages/compare/0.1.0...0.1.1) (2024-01-24)
 
 ### Bug Fixes
