@@ -4,6 +4,7 @@
 		".github",
 		"CHANGELOG.md",
 		"coverage",
+		"joshuakgoldberg",
 		"lib",
 		"node_modules",
 		"pnpm-lock.yaml"

@@ -26,7 +26,7 @@ function createPagination(packageNames: string[], total: number) {
 }
 
 describe("npmUsernameToPackages", () => {
-	it.only("returns results when they are not paginated", async () => {
+	it("returns results when they are not paginated", async () => {
 		const packageNames = ["abc", "def", "ghi"];
 
 		mockFetch.mockResolvedValue({
