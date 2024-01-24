@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 
-import { npmUsernameToPackages } from "./index.js";
+import { npmUsernameToPackages } from "./npmUsernameToPackages.js";
 
 const mockFetch = vi.fn();
 
