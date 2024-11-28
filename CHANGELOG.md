@@ -1,3 +1,9 @@
+## [0.1.3](https://github.com/JoshuaKGoldberg/npm-username-to-packages/compare/0.1.2...0.1.3) (2024-11-28)
+
+### Bug Fixes
+
+- missing & in registery query ([#278](https://github.com/JoshuaKGoldberg/npm-username-to-packages/issues/278)) ([7a63bab](https://github.com/JoshuaKGoldberg/npm-username-to-packages/commit/7a63bab2197009ce84bc9a89e6bc1b05bad123c4)), closes [#277](https://github.com/JoshuaKGoldberg/npm-username-to-packages/issues/277)
+
 ## [0.1.2](https://github.com/JoshuaKGoldberg/npm-username-to-packages/compare/0.1.1...0.1.2) (2024-01-24)
 
 ### Bug Fixes
