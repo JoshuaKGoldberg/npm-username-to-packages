@@ -35,8 +35,6 @@ export async function npmUsernameToPackages(maintainer: string) {
 		);
 		const body = (await response.json()) as ResponseBody;
 
-		console.log({ body });
-
 		packages.push(...body.objects.map((result) => result.package));
 
 		if (packages.length >= body.total) {
