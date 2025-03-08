@@ -24,11 +24,12 @@ interface ResponseBody {
 }
 
 export async function npmUsernameToPackages(maintainer: string) {
+	const encodedMaintainer = encodeURIComponent(maintainer);
 	const packages: PackageData[] = [];
 
 	while (true) {
 		const response = await fetch(
-			`https://registry.npmjs.com/-/v1/search?from=${packages.length}&size=250&text=maintainer:${maintainer}`,
+			`https://registry.npmjs.com/-/v1/search?from=${packages.length}&size=250&text=maintainer:${encodedMaintainer}`,
 			{
 				headers: { "Content-Type": "application/json" },
 			},

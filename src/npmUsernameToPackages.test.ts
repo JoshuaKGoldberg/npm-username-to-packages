@@ -73,4 +73,45 @@ describe("npmUsernameToPackages", () => {
 
 		expect(actual).toEqual(packageNames);
 	});
+
+	it("handle valid npm username without special characters", async () => {
+		const packageNames = ["package1", "package2"];
+		const username = "maintainer-test";
+		const encodedUsername = encodeURIComponent(username);
+
+		mockFetch.mockResolvedValue({
+			json: () => ({
+				objects: packageNames.map((packageName) => ({ package: packageName })),
+				total: packageNames.length,
+			}),
+		});
+
+		const actual = await npmUsernameToPackages(username);
+
+		expect(actual).toEqual(packageNames);
+		expect(mockFetch).toHaveBeenCalledWith(
+			`https://registry.npmjs.com/-/v1/search?from=0&size=250&text=maintainer:${encodedUsername}`,
+			{ headers: { "Content-Type": "application/json" } },
+		);
+	});
+
+	it("handle invalid npm username with special characters", async () => {
+		const username = "#JI*#@%OSJ";
+		const encodedUsername = encodeURIComponent(username);
+
+		mockFetch.mockResolvedValue({
+			json: () => ({
+				objects: [],
+				total: 0,
+			}),
+		});
+
+		const actual = await npmUsernameToPackages(username);
+
+		expect(actual).toEqual([]);
+		expect(mockFetch).toHaveBeenCalledWith(
+			`https://registry.npmjs.com/-/v1/search?from=0&size=250&text=maintainer:${encodedUsername}`,
+			{ headers: { "Content-Type": "application/json" } },
+		);
+	});
 });
