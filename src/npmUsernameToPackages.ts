@@ -1,5 +1,11 @@
 import { PackageData } from "./types.js";
 
+interface ResponseBody {
+	objects: ResponseResult[];
+	time: string;
+	total: number;
+}
+
 interface ResponseResult {
 	flags: {
 		insecure: number;
@@ -15,12 +21,6 @@ interface ResponseResult {
 		final: number;
 	};
 	searchScore: number;
-}
-
-interface ResponseBody {
-	objects: ResponseResult[];
-	time: string;
-	total: number;
 }
 
 export async function npmUsernameToPackages(maintainer: string) {

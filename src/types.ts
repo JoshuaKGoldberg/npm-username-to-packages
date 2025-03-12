@@ -5,6 +5,13 @@ export interface PackageAuthor {
 	username?: string;
 }
 
+export interface PackageLinks {
+	bugs?: string;
+	homepage?: string;
+	npm: string;
+	repository?: string;
+}
+
 export interface PackageMaintainer {
 	email?: string;
 	username?: string;
@@ -13,13 +20,6 @@ export interface PackageMaintainer {
 export interface PackagePublisher {
 	email?: string;
 	username?: string;
-}
-
-export interface PackageLinks {
-	bugs?: string;
-	homepage?: string;
-	npm: string;
-	repository?: string;
 }
 
 /**
