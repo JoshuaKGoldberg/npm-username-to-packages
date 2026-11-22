@@ -9,24 +9,29 @@ import { blockESLint, createConfig } from "create-typescript-app";
 
 export default createConfig({
 	refinements: {
-		addons: [
+		extensions: [
 			blockESLint({
-				rules: [
+				extensions: [
 					{
-						entries: {
-							"@typescript-eslint/no-unnecessary-condition": [
-								"error",
-								{ allowConstantLoopConditions: true },
-							],
-							"@typescript-eslint/restrict-template-expressions": [
-								"error",
-								{ allowNumber: true },
-							],
-							"n/no-unsupported-features/node-builtins": [
-								"error",
-								{ allowExperimental: true },
-							],
-						},
+						files: ["**/*.{js,ts}"],
+						rules: [
+							{
+								entries: {
+									"@typescript-eslint/no-unnecessary-condition": [
+										"error",
+										{ allowConstantLoopConditions: true },
+									],
+									"@typescript-eslint/restrict-template-expressions": [
+										"error",
+										{ allowNumber: true },
+									],
+									"n/no-unsupported-features/node-builtins": [
+										"error",
+										{ allowExperimental: true },
+									],
+								},
+							},
+						],
 					},
 				],
 			}),

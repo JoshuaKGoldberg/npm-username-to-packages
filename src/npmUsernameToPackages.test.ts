@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 
-import { npmUsernameToPackages } from "./npmUsernameToPackages.js";
+import { npmUsernameToPackages } from "./npmUsernameToPackages.ts";
 
 const mockFetch = vi.fn();
 
@@ -25,7 +25,7 @@ function createPagination(packageNames: string[], total: number) {
 	};
 }
 
-describe("npmUsernameToPackages", () => {
+describe(npmUsernameToPackages, () => {
 	it("returns results when they are not paginated", async () => {
 		const packageNames = ["abc", "def", "ghi"];
 
