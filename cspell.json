@@ -6,7 +6,6 @@
 		"CHANGELOG.md",
 		"coverage",
 		"dist",
-		"lib",
 		"node_modules",
 		"pnpm-lock.yaml"
 	],
@@ -15,14 +14,12 @@
 		"MatteoGabriele",
 		"agentscan",
 		"apexskier",
-		"joshuakgoldberg",
 		"knip",
 		"mshick",
 		"octoguide",
 		"packagejson",
 		"peakoss",
 		"stefanzweifel",
-		"tsup",
 		"zizmor",
 		"zizmorcore"
 	]
