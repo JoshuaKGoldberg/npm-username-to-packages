@@ -1,3 +1,9 @@
+## [0.1.4](https://github.com/JoshuaKGoldberg/npm-username-to-packages/compare/0.1.3...0.1.4) (2025-03-12)
+
+### Bug Fixes
+
+- maintainer param with special chars returning unexpected results ([#292](https://github.com/JoshuaKGoldberg/npm-username-to-packages/issues/292)) ([f658732](https://github.com/JoshuaKGoldberg/npm-username-to-packages/commit/f658732dcc6496fe1f736154bda7a72a33221ee5))
+
 ## [0.1.3](https://github.com/JoshuaKGoldberg/npm-username-to-packages/compare/0.1.2...0.1.3) (2024-11-28)
 
 ### Bug Fixes
