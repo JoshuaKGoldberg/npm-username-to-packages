@@ -2,12 +2,25 @@
 	"dictionaries": ["npm", "node", "typescript"],
 	"ignorePaths": [
 		".all-contributorsrc",
-		".github",
+		"/_tmp_*",
 		"CHANGELOG.md",
 		"coverage",
-		"lib",
+		"dist",
 		"node_modules",
 		"pnpm-lock.yaml"
 	],
-	"words": ["joshuakgoldberg", "knip", "packagejson", "tsup"]
+	"words": [
+		"JoshuaKGoldberg",
+		"MatteoGabriele",
+		"agentscan",
+		"apexskier",
+		"knip",
+		"mshick",
+		"octoguide",
+		"packagejson",
+		"peakoss",
+		"stefanzweifel",
+		"zizmor",
+		"zizmorcore"
+	]
 }

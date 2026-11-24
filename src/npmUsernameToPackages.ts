@@ -1,4 +1,4 @@
-import { PackageData } from "./types.js";
+import { PackageData } from "./types.ts";
 
 interface ResponseBody {
 	objects: ResponseResult[];
