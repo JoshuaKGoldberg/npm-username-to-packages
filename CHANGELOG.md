@@ -1,3 +1,12 @@
+# Changelog
+
+## [0.1.5](https://github.com/JoshuaKGoldberg/npm-username-to-packages/compare/0.1.4...0.1.5) (2026-11-24)
+
+### Bug Fixes
+
+- bump to create-typescript-app@2 with transitions action ([#299](https://github.com/JoshuaKGoldberg/npm-username-to-packages/issues/299)) ([8c5176d](https://github.com/JoshuaKGoldberg/npm-username-to-packages/commit/8c5176d18ae6b6541bdaecbc5d29c0439bcaec94)), closes [#298](https://github.com/JoshuaKGoldberg/npm-username-to-packages/issues/298)
+- bump to create-typescript-app@2.87.18 ([#716](https://github.com/JoshuaKGoldberg/npm-username-to-packages/issues/716)) ([55bcf6a](https://github.com/JoshuaKGoldberg/npm-username-to-packages/commit/55bcf6abb92de0aff0616344413b70c0df4021a4)), closes [#715](https://github.com/JoshuaKGoldberg/npm-username-to-packages/issues/715)
+
 ## [0.1.4](https://github.com/JoshuaKGoldberg/npm-username-to-packages/compare/0.1.3...0.1.4) (2025-03-12)
 
 ### Bug Fixes

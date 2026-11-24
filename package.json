@@ -1,6 +1,6 @@
 {
 	"name": "npm-username-to-packages",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"description": "Fetches any packages associated with an npm username. 📨",
 	"repository": {
 		"type": "git",
